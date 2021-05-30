@@ -1,0 +1,106 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- send_email
+- affirm
+- greet
+- restaurant_search
+- goodbye
+- stop
+- deny
+entities:
+- cuisine
+- email
+- location
+- people
+- price
+slots:
+  cuisine:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+  email:
+    type: text
+    influence_conversation: true
+  price:
+    type: text
+    influence_conversation: true
+  check_resp:
+    type: bool
+    influence_conversation: true
+responses:
+  utter_ask_cuisine:
+  - buttons:
+    - payload: Chinese
+      title: Chinese
+    - payload: Mexican
+      title: Mexican
+    - payload: Italian
+      title: Italian
+    - payload: South Indian
+      title: South Indian
+    - payload: North Indian
+      title: North Indian
+    text: what kind of cuisine would you like?
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  - text: what is your query today?
+  utter_ask_location:
+  - text: In what location?
+  - text: can you please tell me the location?
+  - text: what location would you like to search?
+  - text: Which city are you looking for?
+  - text: Can you tell me the location you are looking for?
+  utter_default:
+  - text: i cannot understand
+  - text: hmm.. can you please repeat again?
+  - text: can you explain again?
+  utter_goodbye:
+  - text: goodbye :(
+  - text: Bye-bye
+  - text: See you again!
+  - text: goodbye, hope i was of help today
+  - text: Bye!
+  utter_greet:
+  - text: hey there! How may i help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  utter_ask_budget_for_two:
+  - buttons:
+    - payload: low
+      title: Lesser than Rs. 300
+    - payload: medium
+      title: Rs. 300 to 700
+    - payload: high
+      title: More than 700
+    text: What's the average budget for two people?
+  utter_ask_email_conformation:
+  - text: do you want the details of the top 10 restaurants on email?
+  utter_ask_email_address:
+  - text: Could you please share your email address?
+  - text: What is your email address?
+  - text: Please provide your email address.
+  utter_we_dont_operate:
+  - text: We don't operate in that area yet! :(
+  - text: Apologies, We don't operate in that area yet! :(
+  utter_mail_sent:
+  - text: Congratulations! We have sent the email.
+actions:
+- action_check_loc
+- action_search_restaurants
+- action_send_mail
+- utter_ask_budget_for_two
+- utter_ask_cuisine
+- utter_ask_email_address
+- utter_ask_email_conformation
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_default
+- utter_goodbye
+- utter_greet
+- utter_mail_sent
+- utter_we_dont_operate
