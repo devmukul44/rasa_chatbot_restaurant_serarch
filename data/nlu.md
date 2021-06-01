@@ -387,6 +387,7 @@
 
 ## synonym:Mumbai
 - mumbai
+- mubaim
 - bambai
 - bombay
 - mombai

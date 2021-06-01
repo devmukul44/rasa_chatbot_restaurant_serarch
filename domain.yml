@@ -40,6 +40,8 @@ responses:
       title: Mexican
     - payload: Italian
       title: Italian
+    - payload: American
+      title: American
     - payload: South Indian
       title: South Indian
     - payload: North Indian
@@ -59,7 +61,7 @@ responses:
   - text: hmm.. can you please repeat again?
   - text: can you explain again?
   utter_goodbye:
-  - text: goodbye :(
+  - text: goodbye
   - text: Bye-bye
   - text: See you again!
   - text: goodbye, hope i was of help today
@@ -84,6 +86,9 @@ responses:
   - text: What is your email address?
   - text: Please provide your email address.
   utter_we_dont_operate:
+  - text: Oops, We don't operate in that area yet!
+  - text: Oops, I could't find anything, can you please check spelling are correct?
+  - text: Apologies, We currently operate in Tier 1 and Tier 2 cities.
   - text: We don't operate in that area yet! :(
   - text: Apologies, We don't operate in that area yet! :(
   utter_mail_sent:
