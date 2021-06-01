@@ -1,19 +1,19 @@
 # Restaurant-Chatbot - Mukul Dev
 Restaurant chatbot developed using RASA NLU and python 3.
 
-## Pre-requisites
-Dependency Requirement File can be found here
-
-- python 3.7.9
-- rasa 2.6.0
-- spacy 3.0.6
-- en_core_web_md 3.0.0
 
 ## Trained Models 
 - Latest Trained model Model -> **models/20210601-004834.tar.gz**  
 
 
-## Installation
+## Pre-requisites
+
+- python 3.7.9
+- rasa 2.6.0
+- spacy 3.0.6
+- en_core_web_md 3.0.0
+- Dependency Requirement File can be found here `req.txt`
+
 
 ### Data Files
 
@@ -27,31 +27,33 @@ Dependency Requirement File can be found here
 - **endpoints.yml** contains the webhook configuration for custom action
 
 
-### RASA Commands 
+## Installation
 
 #### create new env
-conda create -n rasa python==3.7.9
+```conda create -n rasa python==3.7.9```
 
 #### Activate env:
-conda activate rasa
+```conda activate rasa```
 
 #### Install Requirements
-pip install -r requirements.txt 
+```pip install -r req.txt```
 
-#### train nlu
-rasa train nlu
+## RASA Commands 
 
-#### test nlu
-rasa shell nlu
+### train nlu
+```rasa train nlu```
 
-#### train both nlu & core
-rasa train
+### test nlu
+```rasa shell nlu```
 
-#### start action server
-rasa run actions
+### train both nlu & core
+```rasa train```
 
-#### test models
-rasa shell
+### start action server
+```rasa run actions```
 
-#### create new data
-rasa interactive
+### test models
+```rasa shell```
+
+### create new training data interactively
+```rasa interactive```
