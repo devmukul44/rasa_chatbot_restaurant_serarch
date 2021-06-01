@@ -26,6 +26,16 @@ Restaurant chatbot developed using RASA NLU and python 3.
 - **domain.yml** defines chatbot domain like entities, actions, templates, slots  
 - **endpoints.yml** contains the webhook configuration for custom action
 
+## Bot Snapshots
+### Sample conversation GIF
+[![asciicast](https://asciinema.org/a/BRiwfvf6e2EyXKGbsCzjs9xhZ.svg)](https://asciinema.org/a/BRiwfvf6e2EyXKGbsCzjs9xhZ)
+
+### Sample conversation Snapshot
+![image](https://user-images.githubusercontent.com/15700993/120261991-40698300-c2c3-11eb-83e9-54bff87c0e99.png)
+
+### Email sent by bot:
+![image](https://user-images.githubusercontent.com/15700993/120262060-6131d880-c2c3-11eb-960f-5e17b89ecc94.png)
+
 
 ## Installation
 
